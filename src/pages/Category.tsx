@@ -49,47 +49,56 @@ export default function Category() {
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::b2ea450c9870193a:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 1" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::9128aa6e89b311ab:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 2" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::766479d0b1f62859:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 3" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::d4a65f6a9f352108:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 4" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::29dcea94c36bfbfd:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 5" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::081e0426ceaef36d:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 6" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::ed621fc8e4ea0a9e:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 7" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::4ba0b932fc29024f:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 8" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773762272.408166000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::7c62fef21e3ecdaa:000001f0f01018bc:00064d3a36256d0f" 
                 alt="Data Design - Slide 9" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -107,17 +116,20 @@ export default function Category() {
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773235168.658817000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::99b96b16525b6794:000001f0f01018bc:00064cbf7c50926f" 
                 alt="Frame 33.jpg" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773235168.658817000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::777985a43f1e6fe5:000001f0f01018bc:00064cbf7c50926f" 
                 alt="Frame 34.jpg" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773235168.658817000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::5e359e4278d95637:000001f0f01018bc:00064cbf7c50926f" 
                 alt="Frame 35.jpg" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -133,12 +145,14 @@ export default function Category() {
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773242960.169669000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::e51e72babe0296ce:000001f0f01018bc:00064cc14cb8931f" 
                 alt="I'M NOT CUTE ANYMORE - Image 1" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773242960.169669000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::46dc5c40d33f9e1f:000001f0f01018bc:00064cc14cb8931f" 
                 alt="I'M NOT CUTE ANYMORE - Image 2" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -154,12 +168,14 @@ export default function Category() {
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773243588.219668000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::edf9fee2fc956b4c:000001f0f01018bc:00064cc17229433f" 
                 alt="ELECTRIC ANGEL - Image 1" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773243588.219668000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::4c38d858e5d4639d:000001f0f01018bc:00064cc17229433f" 
                 alt="ELECTRIC ANGEL - Image 2" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -175,7 +191,8 @@ export default function Category() {
               <img 
                 src="https://aistudio.google.com/_/upload/cd9b5d94-fff8-4d72-9708-08b295e2819b/attachment/1773246102.630331000/blobstore/prod/makersuite/spanner_managed/global::000054e2ea70026d:0000015f:2:000054e2ea70026d:0000000000000001::9dbad39b3bcd7a9a:000001f0f01018bc:00064cc20807b2df" 
                 alt="BUTTERFLY - Image 1" 
-                className="w-full rounded-2xl border border-white/10 shadow-2xl"
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

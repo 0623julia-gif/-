@@ -166,20 +166,22 @@ class GradientBackground {
 }
 
 class App {
-  renderer: any; camera: any; scene: any; clock: any;
+  renderer: any; camera: any; scene: any; lastTime: number = 0;
   touchTexture: TouchTexture; gradientBackground: GradientBackground;
   animationId: number | null = null; container: HTMLElement;
   constructor(container: HTMLElement) {
     this.container = container;
+    const width = container.clientWidth || window.innerWidth || 1;
+    const height = container.clientHeight || window.innerHeight || 1;
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
-    this.renderer.setSize(container.clientWidth, container.clientHeight);
+    this.renderer.setSize(width, height);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(this.renderer.domElement);
-    this.camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 10000);
+    this.camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 10000);
     this.camera.position.z = 50;
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(0x11152b);
-    this.clock = new THREE.Clock();
+    this.lastTime = performance.now();
     this.touchTexture = new TouchTexture();
     this.gradientBackground = new GradientBackground(this);
     this.gradientBackground.uniforms.uTouchTexture.value = this.touchTexture.texture;
@@ -195,22 +197,30 @@ class App {
   init() {
     this.gradientBackground.init();
     const c = this.container;
-    const onMove = (x: number, y: number) => { this.touchTexture.addTouch({ x: x / c.clientWidth, y: 1 - y / c.clientHeight }); };
+    const onMove = (x: number, y: number) => { 
+      const width = c.clientWidth || window.innerWidth || 1;
+      const height = c.clientHeight || window.innerHeight || 1;
+      this.touchTexture.addTouch({ x: x / width, y: 1 - y / height }); 
+    };
     c.addEventListener("mousemove", (e) => onMove(e.offsetX, e.offsetY));
     c.addEventListener("touchmove", (e) => {
       const rect = c.getBoundingClientRect();
       onMove(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top);
     });
     window.addEventListener("resize", () => {
-      this.camera.aspect = c.clientWidth / c.clientHeight;
+      const width = c.clientWidth || window.innerWidth || 1;
+      const height = c.clientHeight || window.innerHeight || 1;
+      this.camera.aspect = width / height;
       this.camera.updateProjectionMatrix();
-      this.renderer.setSize(c.clientWidth, c.clientHeight);
-      this.gradientBackground.onResize(c.clientWidth, c.clientHeight);
+      this.renderer.setSize(width, height);
+      this.gradientBackground.onResize(width, height);
     });
     this.tick();
   }
   tick() {
-    const delta = Math.min(this.clock.getDelta(), 0.1);
+    const currentTime = performance.now();
+    const delta = Math.min((currentTime - this.lastTime) / 1000, 0.1);
+    this.lastTime = currentTime;
     this.touchTexture.update();
     this.gradientBackground.update(delta);
     this.renderer.render(this.scene, this.camera);
