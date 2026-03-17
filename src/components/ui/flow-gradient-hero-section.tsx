@@ -72,14 +72,14 @@ class GradientBackground {
       uTime: { value: 0 },
       uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
       uColor1: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
-      uColor2: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
+      uColor2: { value: new THREE.Vector3(0.067, 0.082, 0.169) },
       uColor3: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
-      uColor4: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
+      uColor4: { value: new THREE.Vector3(0.067, 0.082, 0.169) },
       uColor5: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
-      uColor6: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
+      uColor6: { value: new THREE.Vector3(0.067, 0.082, 0.169) },
       uSpeed: { value: 1.2 }, uIntensity: { value: 1.8 },
       uTouchTexture: { value: null }, uGrainIntensity: { value: 0.08 },
-      uDarkNavy: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
+      uDarkNavy: { value: new THREE.Vector3(0.067, 0.082, 0.169) },
       uGradientSize: { value: 0.45 }, uGradientCount: { value: 12.0 },
       uColor1Weight: { value: 0.5 }, uColor2Weight: { value: 1.8 }
     };
@@ -152,17 +152,11 @@ class GradientBackground {
   }
   update(delta: number) { if (!this.isPaused) this.uniforms.uTime.value += delta; }
   setTheme(isDark: boolean) {
-    if (isDark) {
-      this.uniforms.uColor1.value.set(0.945, 0.353, 0.133);
-      this.uniforms.uColor2.value.set(0.039, 0.055, 0.153);
-      this.uniforms.uDarkNavy.value.set(0.039, 0.055, 0.153);
-      this.sceneManager.scene.background = new THREE.Color(0x0a0e27);
-    } else {
-      this.uniforms.uColor1.value.set(1.0, 0.5, 0.35);
-      this.uniforms.uColor2.value.set(0.9, 0.95, 1.0);
-      this.uniforms.uDarkNavy.value.set(0.95, 0.97, 1.0);
-      this.sceneManager.scene.background = new THREE.Color(0xf5f7ff);
-    }
+    // Always use dark mode colors (#11152B background) regardless of isDark
+    this.uniforms.uColor1.value.set(0.945, 0.353, 0.133);
+    this.uniforms.uColor2.value.set(0.067, 0.082, 0.169);
+    this.uniforms.uDarkNavy.value.set(0.067, 0.082, 0.169);
+    this.sceneManager.scene.background = new THREE.Color(0x11152b);
   }
   onResize(w: number, h: number) {
     const viewSize = this.sceneManager.getViewSize();
@@ -184,7 +178,7 @@ class App {
     this.camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 10000);
     this.camera.position.z = 50;
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0x0a0e27);
+    this.scene.background = new THREE.Color(0x11152b);
     this.clock = new THREE.Clock();
     this.touchTexture = new TouchTexture();
     this.gradientBackground = new GradientBackground(this);

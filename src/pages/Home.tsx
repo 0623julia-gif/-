@@ -4,7 +4,7 @@ import { Component as FlowGradientHero } from "../components/ui/flow-gradient-he
 
 const MorphOverlay = () => (
   <motion.div
-    className="fixed inset-0 z-50 bg-[#090C22] pointer-events-none"
+    className="fixed inset-0 z-50 bg-[#11152B] pointer-events-none"
     initial={{ clipPath: "circle(150% at 50% 50%)" }}
     animate={{ clipPath: "circle(0% at 50% 50%)" }}
     exit={{ clipPath: "circle(150% at 50% 50%)" }}
@@ -15,7 +15,7 @@ const MorphOverlay = () => (
 export default function Home() {
   return (
     <motion.div
-      className="h-screen w-full overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#090C22]"
+      className="h-screen w-full overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#11152B]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

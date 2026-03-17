@@ -5,7 +5,7 @@ import { ArrowLeft, GripVertical } from "lucide-react";
 
 const MorphOverlay = () => (
   <motion.div
-    className="fixed inset-0 z-50 bg-[#090C22] pointer-events-none"
+    className="fixed inset-0 z-50 bg-[#11152B] pointer-events-none"
     initial={{ clipPath: "circle(150% at 50% 50%)" }}
     animate={{ clipPath: "circle(0% at 50% 50%)" }}
     exit={{ clipPath: "circle(150% at 50% 50%)" }}
@@ -64,7 +64,7 @@ export default function Project() {
 
   return (
     <motion.div
-      className="min-h-screen w-full bg-[#090C22] text-white flex flex-col"
+      className="min-h-screen w-full bg-[#11152B] text-white flex flex-col"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
