@@ -250,6 +250,62 @@ export default function Category() {
               />
             </div>
           </div>
+
+          <div className="flex flex-col gap-8 mt-12">
+            {/* BACKPAST 텍스트로 범주 분리 */}
+            <h2 className="text-3xl font-black tracking-widest uppercase text-white border-b border-white/20 pb-4">
+              BACKPAST
+            </h2>
+            
+            {/* BACKPAST 사진 영역 */}
+            <div className="flex flex-col gap-12">
+              {/* 아래 src 속성에 이미지 URL을 넣어주세요 */}
+              <img 
+                src="https://github.com/user-attachments/assets/269eb4c4-f21d-4efc-8b69-8d5502ff11d3" 
+                alt="BACKPAST - Image 1" 
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl bg-white/5 min-h-[200px]"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-8 mt-12">
+            {/* E.I.F.F. 텍스트로 범주 분리 */}
+            <h2 className="text-3xl font-black tracking-widest uppercase text-white border-b border-white/20 pb-4">
+              E.I.F.F.
+            </h2>
+            
+            {/* E.I.F.F. 사진 영역 */}
+            <div className="flex flex-col gap-12">
+              {/* 아래 src 속성에 이미지 URL을 넣어주세요 (빈 문자열 대신 undefined 사용) */}
+              <img 
+                src="https://github.com/user-attachments/assets/faa72053-53fb-41e6-b3db-3df062ccec89" 
+                alt="E.I.F.F. - Image 1" 
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl bg-white/5 min-h-[200px]"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
+              />
+              <img 
+                src="https://github.com/user-attachments/assets/614da23e-5244-464e-a4f6-375898579983"
+                alt="E.I.F.F. - Image 2" 
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl bg-white/5 min-h-[200px]"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
+              />
+              <img 
+                src="https://github.com/user-attachments/assets/84afd020-91ae-4a2a-8a05-123433262817" 
+                alt="E.I.F.F. - Image 3" 
+                className="w-full h-auto block object-contain rounded-2xl border border-white/10 shadow-2xl bg-white/5 min-h-[200px]"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
         </div>
       ) : (
         <div className="w-full max-w-7xl flex-1 glass rounded-t-3xl p-10 flex items-center justify-center border-b-0 z-10 relative">
